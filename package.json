@@ -1,0 +1,49 @@
+{
+  "name": "@ptmlly/md",
+  "version": "0.1.0",
+  "description": "Ptmyll Markdown",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.cts",
+  "scripts": {
+    "build": "tsx build.ts"
+  },
+  "keywords": [
+    "ptmlly",
+    "markdown"
+  ],
+  "author": {
+    "name": "Pho Thin Mg",
+    "email": "phothinmg@disroot.org",
+    "url": "https://phothinmg.github.io/"
+  },
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@ptmlly/fm": "^0.1.0",
+    "marked": "^17.0.1"
+  },
+  "files": [
+    "dist/*",
+    "LICENSE",
+    "readme.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./dist/index.cjs",
+        "types": "./dist/index.d.cts"
+      },
+      "import": {
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  }
+}
