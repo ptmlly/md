@@ -45,5 +45,13 @@
         "types": "./dist/index.d.ts"
       }
     }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptmlly/md.git"
   }
 }
